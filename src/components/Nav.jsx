@@ -13,6 +13,7 @@ function Nav() {
   };
 
   return (
+    // This bg-primary will now be Deep Indigo
     <header className="bg-primary shadow-lg sticky top-0 z-50">
       <div className="container flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3">
@@ -40,7 +41,9 @@ function Nav() {
         <div className="flex items-center gap-3">
           <Link
             to="/report"
-            className="rounded-md px-4 py-2 bg-accent text-neutral-900 text-sm font-bold shadow-sm transition-transform hover:scale-105 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary"
+            // This bg-accent will now be Warm Marigold
+            // UPDATED the hover:bg-yellow-400 to hover:bg-accent-light
+            className="rounded-md px-4 py-2 bg-accent text-neutral-900 text-sm font-bold shadow-sm transition-all hover:scale-105 hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary"
           >
             Report an Issue
           </Link>

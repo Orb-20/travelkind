@@ -9,14 +9,22 @@ body,
   height: 100%;
 }
 body {
-  font-family: Inter, Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background-color: #f4f4f4; /* THIS IS THE FIX: new 'neutral' color */
-  color: #0f172a;
+  font-family: 'Inter', Roboto, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial;
+  /* Use the new neutral color for the page background */
+  background-color: theme('colors.neutral.DEFAULT');
+  /* Use the new dark text color */
+  color: theme('colors.text.dark');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a:focus,
 button:focus,
-input:focus {
-  outline: 3px solid rgba(26, 83, 92, 0.25); /* Updated to new 'primary' color w/ 25% opacity */
+input:focus,
+select:focus,
+textarea:focus {
+  /* Use the new primary color for focus rings */
+  outline: 3px solid theme('colors.primary.light / 0.4');
   outline-offset: 2px;
 }
 .container {

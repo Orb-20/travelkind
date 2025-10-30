@@ -33,3 +33,53 @@ textarea:focus {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* ... all your other @tailwind styles ... */
+
+/* Keyframes for sparkle animation */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Animation classes for the modal */
+.animate-pulse-slow-1 {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 0s;
+}
+.animate-pulse-slow-2 {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 0.3s;
+}
+.animate-pulse-slow-3 {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 0.6s;
+}
+.animate-pulse-slow-4 {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 0.9s;
+}
+/* ... all your other @tailwind styles ... */
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation class to be applied to the cards */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}

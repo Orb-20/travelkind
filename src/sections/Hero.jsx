@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/pledge"
-            className="px-8 py-3 bg-accent text-neutral-900 font-bold rounded-md shadow-lg transition-all transform hover:scale-105 hover:bg-accent-light text-center"
+            className="px-8 py-3 bg-accent text-text-dark font-bold rounded-md shadow-lg transition-all transform hover:scale-105 hover:bg-accent-light text-center"
           >
             Take the Pledge
           </Link>
@@ -28,10 +28,15 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* This placeholder is now styled to look like an intentional hero image container */}
-        <div className="w-full max-w-4xl h-72 bg-neutral-200 rounded-lg flex items-center justify-center text-sm text-text-light mt-16 mx-auto shadow-inner">
-          <p>Hero image placeholder (e.g., beautiful landscape)</p>
-        </div>
+        {/* --- IMAGE ADDED --- */}
+        {/* This placeholder is now an image from Unsplash */}
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1700&q=80"
+          alt="Beautiful mountain landscape"
+          className="w-full max-w-4xl h-72 object-cover rounded-lg mt-16 mx-auto shadow-lg"
+        />
+        {/* --- END IMAGE --- */}
+
       </div>
     </section>
   );

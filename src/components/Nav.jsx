@@ -13,13 +13,26 @@ function Nav() {
   };
 
   return (
-    // This bg-primary will now be Deep Indigo
+    // This bg-primary will now be Deep Teal
     <header className="bg-primary shadow-lg sticky top-0 z-50">
       <div className="container flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-bold ring-1 ring-white/30">
-            TK
+          {/* --- NEW LOGO ICON --- */}
+          <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center ring-1 ring-white/30">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-5 h-5 text-white"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.5 6.5 0 0111.336 0H4.332zM15.668 9.5A6.5 6.5 0 014.332 9.5h11.336zM4.332 11.973a6.5 6.5 0 0111.336 0H4.332z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
+          {/* --- END NEW LOGO --- */}
           <div className="text-lg font-semibold text-white">TravelKind</div>
         </Link>
 
@@ -41,9 +54,8 @@ function Nav() {
         <div className="flex items-center gap-3">
           <Link
             to="/report"
-            // This bg-accent will now be Warm Marigold
-            // UPDATED the hover:bg-yellow-400 to hover:bg-accent-light
-            className="rounded-md px-4 py-2 bg-accent text-neutral-900 text-sm font-bold shadow-sm transition-all hover:scale-105 hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary"
+            // This bg-accent will now be Sunny Yellow
+            className="rounded-md px-4 py-2 bg-accent text-text-dark text-sm font-bold shadow-sm transition-all hover:scale-105 hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary"
           >
             Report an Issue
           </Link>

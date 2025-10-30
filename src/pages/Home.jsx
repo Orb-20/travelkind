@@ -78,9 +78,14 @@ export default function Home() {
               daily tips to reporting local issues.
             </p>
           </div>
-          <div className="w-full h-72 bg-neutral-200 rounded-lg flex items-center justify-center text-sm text-text-light shadow-inner">
-            <p>Mission image placeholder (e.g., clean trail)</p>
-          </div>
+
+          {/* --- IMAGE UPDATED --- */}
+          <img
+            src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1700&q=80"
+            alt="Pristine waterfall in a green forest"
+            className="w-full h-72 object-cover rounded-lg shadow-lg"
+          />
+          {/* --- END IMAGE --- */}
         </div>
       </section>
 

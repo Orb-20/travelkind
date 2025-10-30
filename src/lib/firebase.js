@@ -1,12 +1,18 @@
-import { initializeApp } from 'firebase/app'
-import { getFirestore, serverTimestamp } from 'firebase/firestore'
-import { getStorage } from 'firebase/storage'
-import { firebaseConfig } from '../firebaseConfig'
+import { initializeApp } from 'firebase/app';
+import { getFirestore, serverTimestamp } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+// import { firebaseConfig } from '../firebaseConfig' // We'll skip this
 
-const app = initializeApp(firebaseConfig)
-export const db = getFirestore(app)
-export const storage = getStorage(app)
-export const ts = serverTimestamp
+// --- We are commenting out the real Firebase app ---
+// const app = initializeApp(firebaseConfig)
+// export const db = getFirestore(app)
+// export const storage = getStorage(app)
+// export const ts = serverTimestamp
 
-// NOTE: This file is ready, but you'll need to provide real firebaseConfig values.
-// The app uses Firestore for pledges & reports, and Storage for uploaded photos.
+// --- And exporting mock (fake) values instead ---
+export const db = null;
+export const storage = null;
+export const ts = () => new Date(); // Just return a plain date for now
+
+// NOTE: This file is now mocked to allow frontend-only development.
+// The app will no longer try to connect to Firebase.

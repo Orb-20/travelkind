@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#2D8F6F',
-        accent: '#0B6FA4',
-        neutral: '#F7F7F6',
-        warning: '#E67A3D'
-      }
-    }
+        primary: '#1A535C', // Dark Pine Green
+        accent: '#FCA311', // Rich Gold
+        neutral: '#F4F4F4', // Light Stone Gray
+        warning: '#D95F02', // Burnt Orange
+      },
+    },
   },
   plugins: [],
-}
+};
